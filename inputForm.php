@@ -13,10 +13,8 @@
       display: block;
       max-width: 600px;
     }
-    select .selectpicker {
-      border-radius: none !important;
-      border-top-left-radius: none !important;
-      border-bottom-left-radius: none !important;
+    .form-horizontal .control-label {
+      text-align: left !important;
     }
     legend {
       margin-bottom: 30px;
@@ -92,7 +90,7 @@
           </div>
         </div>
         </div>
-        
+
         <div class="form-group">
           <label class="col-md-12 control-label">Level</label>
             <div class="col-md-12 selectContainer">
@@ -216,8 +214,8 @@
               <option value=" " >Please select course</option>
 
               <option>ITS100</option>
-              
-            
+
+
             </select>
           </div>
         </div>
@@ -234,8 +232,8 @@
               <option>1</option>
               <option>2</option>
               <option>3</option>
-              
-            
+
+
             </select>
           </div>
         </div>
@@ -251,8 +249,8 @@
 
               <option>17</option>
               <option>less than 17</option>
-              
-            
+
+
             </select>
           </div>
         </div>
@@ -293,11 +291,11 @@
 
         <!-- Text input-->
 
-      
+
 
         <!-- Select Basic -->
 
-        
+
 
         <!-- Success message -->
         <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
