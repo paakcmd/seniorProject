@@ -21,7 +21,7 @@
   </style>
   <body>
     <div class="container">
-      <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+      <form class="well form-horizontal" action = "addSubject-todb.php" method="post" >
         <fieldset>
 
         <!-- Form Name -->
@@ -46,7 +46,7 @@
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-          <input name="course_title" placeholder="Last Name" class="form-control"  type="text">
+          <input name="course_title" placeholder="Course Title" class="form-control"  type="text">
             </div>
           </div>
         </div>
@@ -56,11 +56,11 @@
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-          <input name="credit" placeholder="Last Name" class="form-control"  type="text">
+          <input name="credit" placeholder="Credit" class="form-control"  type="number">
             </div>
           </div>
         </div>
-        <input class="btn btn-success" type="text" name="" value="submit">
+        <input class="btn btn-success" type="submit" name="" value="submit">
         </fieldset>
       </form>
     </div>
