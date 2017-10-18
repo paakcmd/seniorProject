@@ -142,7 +142,6 @@
           </div>
         </div>
 
-        !-- Text input-->
 
         <div class="form-group">
           <label class="col-md-12 control-label">Bank/Branch</label>
