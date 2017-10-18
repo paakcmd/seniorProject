@@ -26,7 +26,7 @@
         <fieldset>
 
         <!-- Form Name -->
-        <legend>Contact Us Today!</legend>
+        <legend>New Part-Time Employee Information</legend>
 
         <!-- Text input-->
 
@@ -92,6 +92,16 @@
         </div>
 
         <div class="form-group">
+          <label class="col-md-12 control-label">Highest Degree (if other)</label>
+            <div class="col-md-12 inputGroupContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+          <input name="highest_degree_other" class="form-control" placeholder="Highest Degree" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
           <label class="col-md-12 control-label">Level</label>
             <div class="col-md-12 selectContainer">
             <div class="input-group">
@@ -112,7 +122,7 @@
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-          <input name="address" class="form-control"  type="text">
+          <input name="address" class="form-control" placeholder="Affiliation & Address" type="text">
             </div>
           </div>
         </div>
@@ -125,7 +135,7 @@
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-          <input name="position" class="form-control" type="text">
+          <input name="position" class="form-control" placeholder="Position" type="text">
             </div>
           </div>
         </div>
@@ -137,19 +147,18 @@
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-          <input name="account_number" class="form-control" type="text">
+          <input name="account_number" class="form-control" placeholder="Account Number"type="text">
             </div>
           </div>
         </div>
 
-        !-- Text input-->
 
         <div class="form-group">
           <label class="col-md-12 control-label">Bank/Branch</label>
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-          <input name="bank_branch" class="form-control" type="text">
+          <input name="bank_branch" class="form-control" placeholder="Bank/Branch"type="text">
             </div>
           </div>
         </div>
@@ -159,7 +168,7 @@
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-          <input name="phone" class="form-control" type="text">
+          <input name="phone" class="form-control" placeholder="Phone Number" type="text">
             </div>
           </div>
         </div>
@@ -169,7 +178,7 @@
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-          <input name="mobile" class="form-control" type="text">
+          <input name="mobile" class="form-control" placeholder="Mobile" type="text">
             </div>
           </div>
         </div>
@@ -179,7 +188,7 @@
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-          <input name="fax" class="form-control" type="text">
+          <input name="fax" class="form-control" placeholder="Fax" type="text">
             </div>
           </div>
         </div>
@@ -189,7 +198,7 @@
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-          <input name="email" class="form-control" type="email">
+          <input name="email" class="form-control" placeholder="abc@mno.com" type="email">
             </div>
           </div>
         </div>
@@ -199,7 +208,7 @@
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-          <input name="home_address" class="form-control" type="text">
+          <input name="home_address" class="form-control" placeholder="Home Address" type="text">
             </div>
           </div>
         </div>
@@ -271,7 +280,7 @@
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-          <input name="renumeration_rate" class="form-control" type="text">
+          <input name="renumeration_rate" class="form-control" placeholder="Renumeration Rate" type="text">
             </div>
           </div>
         </div>
@@ -282,7 +291,7 @@
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-          <input name="traveling_expense" class="form-control" type="text">
+          <input name="traveling_expense"  placeholder="Traveling Expense"class="form-control" type="text">
             </div>
           </div>
         </div>
@@ -298,13 +307,13 @@
 
 
         <!-- Success message -->
-        <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+        
 
         <!-- Button -->
         <div class="form-group">
           <label class="col-md-12 control-label"></label>
           <div class="col-md-12">
-            <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+            <button type="submit" class="btn btn-warning" >Add <span class="glyphicon glyphicon-send"></span></button>
           </div>
         </div>
 
