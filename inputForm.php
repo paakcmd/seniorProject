@@ -13,7 +13,8 @@
       display: block;
       max-width: 600px;
     }
-    .selectpicker {
+    select .selectpicker {
+      border-radius: none !important;
       border-top-left-radius: none !important;
       border-bottom-left-radius: none !important;
     }
@@ -51,6 +52,43 @@
           <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
             </div>
           </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-12 control-label">Department</label>
+            <div class="col-md-12 selectContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+            <select name="state" class="form-control selectpicker" >
+              <option value=" " >Please select your department</option>
+              <option>Chemical Engineering</option>
+              <option>Civil Engineer</option>
+              <option >Common and Graduate Study</option>
+              <option >Computer Engineering</option>
+              <option >Electronics and Communication Engineering</option>
+              <option >Engineering Management</option>
+              <option >Industrial Engineering</option>
+              <option >Information Technology</option>
+              <option >Management Technology</option>
+              <option> Mechanical Engineering</option>
+            </select>
+          </div>
+        </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-12 control-label">Highest Degree</label>
+            <div class="col-md-12 selectContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+            <select name="state" class="form-control selectpicker" >
+              <option value=" " >Please select your Highest Degree</option>
+              <option>PhD</option>
+              <option>MS</option>
+              <option >BS</option>
+            </select>
+          </div>
+        </div>
         </div>
 
         <!-- Text input-->
