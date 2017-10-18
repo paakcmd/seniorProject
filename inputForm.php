@@ -59,7 +59,7 @@
             <div class="col-md-12 selectContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-            <select name="state" class="form-control selectpicker" >
+            <select name="department" class="form-control selectpicker" >
               <option value=" " >Please select your department</option>
               <option>Chemical Engineering</option>
               <option>Civil Engineer</option>
@@ -81,11 +81,28 @@
             <div class="col-md-12 selectContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-            <select name="state" class="form-control selectpicker" >
+            <select name="highest_degree" class="form-control selectpicker" >
               <option value=" " >Please select your Highest Degree</option>
               <option>PhD</option>
               <option>MS</option>
               <option >BS</option>
+              <option >Scholarship Student</option>
+              <option >Other</option>
+            </select>
+          </div>
+        </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-12 control-label">Level</label>
+            <div class="col-md-12 selectContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+            <select name="level" class="form-control selectpicker" >
+              <option value=" " >Please select your level</option>
+              <option>Undergraduate Level</option>
+              <option>Graduate Level</option>
+
             </select>
           </div>
         </div>
@@ -93,11 +110,11 @@
 
         <!-- Text input-->
                <div class="form-group">
-          <label class="col-md-12 control-label">E-Mail</label>
+          <label class="col-md-12 control-label">Affiliation & Address</label>
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-          <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+          <input name="address" class="form-control"  type="text">
             </div>
           </div>
         </div>
@@ -106,11 +123,11 @@
         <!-- Text input-->
 
         <div class="form-group">
-          <label class="col-md-12 control-label">Phone #</label>
+          <label class="col-md-12 control-label">Position</label>
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-          <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+          <input name="position" class="form-control" type="text">
             </div>
           </div>
         </div>
@@ -118,143 +135,169 @@
         <!-- Text input-->
 
         <div class="form-group">
-          <label class="col-md-12 control-label">Address</label>
+          <label class="col-md-12 control-label">Account Number</label>
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-          <input name="address" placeholder="Address" class="form-control" type="text">
+          <input name="account_number" class="form-control" type="text">
             </div>
           </div>
         </div>
 
-        <!-- Text input-->
+        !-- Text input-->
 
         <div class="form-group">
-          <label class="col-md-12 control-label">City</label>
+          <label class="col-md-12 control-label">Bank/Branch</label>
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-          <input name="city" placeholder="city" class="form-control"  type="text">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+          <input name="bank_branch" class="form-control" type="text">
             </div>
           </div>
         </div>
 
-        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-12 control-label">Phone</label>
+            <div class="col-md-12 inputGroupContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+          <input name="phone" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
 
         <div class="form-group">
-          <label class="col-md-12 control-label">State</label>
+          <label class="col-md-12 control-label">Mobile</label>
+            <div class="col-md-12 inputGroupContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+          <input name="mobile" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-12 control-label">Fax</label>
+            <div class="col-md-12 inputGroupContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+          <input name="fax" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-12 control-label">Email</label>
+            <div class="col-md-12 inputGroupContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+          <input name="email" class="form-control" type="email">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-12 control-label">Home Address</label>
+            <div class="col-md-12 inputGroupContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+          <input name="home_address" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label class="col-md-12 control-label">Course No.</label>
             <div class="col-md-12 selectContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-            <select name="state" class="form-control selectpicker" >
-              <option value=" " >Please select your state</option>
-              <option>Alabama</option>
-              <option>Alaska</option>
-              <option >Arizona</option>
-              <option >Arkansas</option>
-              <option >California</option>
-              <option >Colorado</option>
-              <option >Connecticut</option>
-              <option >Delaware</option>
-              <option >District of Columbia</option>
-              <option> Florida</option>
-              <option >Georgia</option>
-              <option >Hawaii</option>
-              <option >daho</option>
-              <option >Illinois</option>
-              <option >Indiana</option>
-              <option >Iowa</option>
-              <option> Kansas</option>
-              <option >Kentucky</option>
-              <option >Louisiana</option>
-              <option>Maine</option>
-              <option >Maryland</option>
-              <option> Mass</option>
-              <option >Michigan</option>
-              <option >Minnesota</option>
-              <option>Mississippi</option>
-              <option>Missouri</option>
-              <option>Montana</option>
-              <option>Nebraska</option>
-              <option>Nevada</option>
-              <option>New Hampshire</option>
-              <option>New Jersey</option>
-              <option>New Mexico</option>
-              <option>New York</option>
-              <option>North Carolina</option>
-              <option>North Dakota</option>
-              <option>Ohio</option>
-              <option>Oklahoma</option>
-              <option>Oregon</option>
-              <option>Pennsylvania</option>
-              <option>Rhode Island</option>
-              <option>South Carolina</option>
-              <option>South Dakota</option>
-              <option>Tennessee</option>
-              <option>Texas</option>
-              <option> Uttah</option>
-              <option>Vermont</option>
-              <option>Virginia</option>
-              <option >Washington</option>
-              <option >West Virginia</option>
-              <option>Wisconsin</option>
-              <option >Wyoming</option>
+            <select name="course_no" class="form-control selectpicker" >
+              <option value=" " >Please select course</option>
+
+              <option>ITS100</option>
+              
+            
             </select>
           </div>
         </div>
         </div>
 
-        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-12 control-label">Section</label>
+            <div class="col-md-12 selectContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+            <select name="section" class="form-control selectpicker" >
+              <option value=" " >Please select section</option>
+
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              
+            
+            </select>
+          </div>
+        </div>
+        </div>
 
         <div class="form-group">
-          <label class="col-md-12 control-label">Zip Code</label>
+          <label class="col-md-12 control-label">Weeks</label>
+            <div class="col-md-12 selectContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+            <select name="weeks" class="form-control selectpicker" >
+              <option value=" " >Please select section</option>
+
+              <option>17</option>
+              <option>less than 17</option>
+              
+            
+            </select>
+          </div>
+        </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-12 control-label">Number of weeks (if less than 17)</label>
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-          <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
-            </div>
-        </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="form-group">
-          <label class="col-md-12 control-label">Website or domain name</label>
-           <div class="col-md-12 inputGroupContainer">
-            <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
-          <input name="website" placeholder="Website or domain name" class="form-control" type="text">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+          <input name="no_of_weeks" class="form-control" type="text">
             </div>
           </div>
         </div>
 
-        <!-- radio checks -->
-         <div class="form-group">
-                                <label class="col-md-12 control-label">Do you have hosting?</label>
-                                <div class="col-md-12">
-                                    <div class="radio">
-                                        <label>
-                                            <input type="radio" name="hosting" value="yes" /> Yes
-                                        </label>
-                                    </div>
-                                    <div class="radio">
-                                        <label>
-                                            <input type="radio" name="hosting" value="no" /> No
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-        <!-- Text area -->
-
         <div class="form-group">
-          <label class="col-md-12 control-label">Project Description</label>
+          <label class="col-md-12 control-label">Renumeration Rate (Baht/Hr.)</label>
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                	<textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
-          </div>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+          <input name="renumeration_rate" class="form-control" type="text">
+            </div>
           </div>
         </div>
+
+
+        <div class="form-group">
+          <label class="col-md-12 control-label">Traveling Expense (Baht/1 Round trip)</label>
+            <div class="col-md-12 inputGroupContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+          <input name="traveling_expense" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Text input-->
+
+      
+
+        <!-- Select Basic -->
+
+        
 
         <!-- Success message -->
         <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
