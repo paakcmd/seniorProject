@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 18, 2017 at 12:14 PM
+-- Generation Time: Oct 20, 2017 at 08:51 AM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.8
 
@@ -71,6 +71,44 @@ INSERT INTO `department` (`value`, `name`) VALUES
 (8, 'Information Technology'),
 (9, 'Management TechnologyMechanical Engineering');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_info`
+--
+
+CREATE TABLE `user_info` (
+  `value` int(11) NOT NULL,
+  `first_name` text NOT NULL,
+  `last_name` text NOT NULL,
+  `department` int(30) NOT NULL,
+  `highest_degree` text NOT NULL,
+  `highest_degree_other` text NOT NULL,
+  `level` text NOT NULL,
+  `address` text NOT NULL,
+  `position` text NOT NULL,
+  `account_number` text NOT NULL,
+  `bank_branch` text NOT NULL,
+  `phone` text NOT NULL,
+  `mobile` text NOT NULL,
+  `fax` text NOT NULL,
+  `email` text NOT NULL,
+  `home_address` text NOT NULL,
+  `course_no` text NOT NULL,
+  `section` text NOT NULL,
+  `weeks` text NOT NULL,
+  `no_of_weeks` text NOT NULL,
+  `renumeration_rate` text NOT NULL,
+  `traveling_expense` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user_info`
+--
+
+INSERT INTO `user_info` (`value`, `first_name`, `last_name`, `department`, `highest_degree`, `highest_degree_other`, `level`, `address`, `position`, `account_number`, `bank_branch`, `phone`, `mobile`, `fax`, `email`, `home_address`, `course_no`, `section`, `weeks`, `no_of_weeks`, `renumeration_rate`, `traveling_expense`) VALUES
+(1, 'asdf', 'asdf', 0, 'BS', 'asdf', 'Graduate Level', 'asdf', 'adsf', 'adsf', 'asdf', 'asdf', 'asdf', 'asdf', 'asdf@gmail.com', 'asdf', 'ITS100', '1', '17', 'asdf', 'asdf', 'asdf');
+
 --
 -- Indexes for dumped tables
 --
@@ -88,6 +126,12 @@ ALTER TABLE `department`
   ADD PRIMARY KEY (`value`);
 
 --
+-- Indexes for table `user_info`
+--
+ALTER TABLE `user_info`
+  ADD PRIMARY KEY (`value`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -95,12 +139,17 @@ ALTER TABLE `department`
 -- AUTO_INCREMENT for table `course`
 --
 ALTER TABLE `course`
-  MODIFY `value` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `value` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `department`
 --
 ALTER TABLE `department`
-  MODIFY `value` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;COMMIT;
+  MODIFY `value` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+--
+-- AUTO_INCREMENT for table `user_info`
+--
+ALTER TABLE `user_info`
+  MODIFY `value` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

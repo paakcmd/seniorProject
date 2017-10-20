@@ -22,7 +22,7 @@
   </style>
   <body>
     <div class="container">
-      <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+      <form class="well form-horizontal" action="inputForm-todb.php" method="post"  id="contact_form">
         <fieldset>
 
         <!-- Form Name -->
@@ -307,7 +307,7 @@
 
 
         <!-- Success message -->
-        
+
 
         <!-- Button -->
         <div class="form-group">
