@@ -60,6 +60,16 @@
             </div>
           </div>
         </div>
+			
+		<div class="form-group">
+          <label class="col-md-12 control-label">Number of Sections</label>
+            <div class="col-md-12 inputGroupContainer">
+            <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input name="credit" placeholder="Sections" class="form-control"  type="number">
+            </div>
+          </div>
+        </div>
         <input class="btn btn-success" type="submit" name="" value="submit">
         </fieldset>
       </form>
