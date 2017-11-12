@@ -6,7 +6,6 @@
   </head>
   <style media="screen">
     .container {
-      margin-top:50px;
       margin-left: auto;
       margin-right: auto;
       display: block;
@@ -20,6 +19,7 @@
     }
   </style>
   <body>
+    <?php include('navbar.php'); ?>
     <div class="container">
       <form class="well form-horizontal" action = "addSubject-todb.php" method="post" >
         <fieldset>
@@ -60,7 +60,7 @@
             </div>
           </div>
         </div>
-			
+
 		<div class="form-group">
           <label class="col-md-12 control-label">Number of Sections</label>
             <div class="col-md-12 inputGroupContainer">

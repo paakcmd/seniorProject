@@ -2,12 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <title></title>
   </head>
   <style media="screen">
     .container {
-      margin-top:50px;
       margin-left: auto;
       margin-right: auto;
       display: block;
@@ -21,7 +19,10 @@
     }
   </style>
   <body>
+    <?php include('navbar.php'); ?>
+
     <div class="container">
+
       <form class="well form-horizontal" action="inputForm-todb.php" method="post"  id="contact_form">
         <fieldset>
 
