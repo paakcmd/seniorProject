@@ -8,6 +8,7 @@ crossorigin="anonymous"></script>
 Code snippet by maridlcrmn for Bootsnipp.com
 Follow me on Twitter @maridlcrmn
 */
+.img-profile { width:22px; height:22px; margin-right:10px; }
 .navbar-container { width:70%; margin-left: 15%;}
 .navbar-brand { position: relative; z-index: 2; }
 
@@ -90,10 +91,10 @@ Follow me on Twitter @maridlcrmn
             <li><a href="./cancelClass.php">Cancellation</a></li>
             <li><a href="./makeupClass.php">Make Up</a></li>
             <li><a href="./generateDocument.php">Generate Contract</a></li>
-			 <li><a href=""><img src="./" class="img-circle" />Juju</a></li>
+			 <li><a href=""><img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" class="img-circle img-profile" />Juju</a></li>
 
             <li>
-              <a style = "display:none!important"class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="./authentication.php" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
+              <a style="display:none!important"class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="./authentication.php" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
             </li>
           </ul>
           <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse2">
