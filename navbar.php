@@ -8,7 +8,7 @@ crossorigin="anonymous"></script>
 Code snippet by maridlcrmn for Bootsnipp.com
 Follow me on Twitter @maridlcrmn
 */
-
+.navbar-container { width:70%; margin-left: 15%;}
 .navbar-brand { position: relative; z-index: 2; }
 
 .navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; transition: transform 0.3s; }
@@ -70,7 +70,7 @@ Follow me on Twitter @maridlcrmn
 }
 </style>
 <nav class="navbar navbar-default">
-      <div class="container">
+      <div class="navbar-container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
@@ -87,6 +87,8 @@ Follow me on Twitter @maridlcrmn
           <ul class="nav navbar-nav navbar-right">
             <li><a href="./inputForm.php">Add Professors/Ta</a></li>
             <li><a href="./addSubject.php">Add Subject</a></li>
+            <li><a href="./cancelClass.php">Cancel class</a></li>
+            <li><a href="./makeupClass.php">Make up class</a></li>
 
             <li>
               <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="./authentication.php" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
