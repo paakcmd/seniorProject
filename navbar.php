@@ -79,7 +79,7 @@ Follow me on Twitter @maridlcrmn
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">SIIT</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -87,12 +87,13 @@ Follow me on Twitter @maridlcrmn
           <ul class="nav navbar-nav navbar-right">
             <li><a href="./inputForm.php">Add Professors/Ta</a></li>
             <li><a href="./addSubject.php">Add Subject</a></li>
-            <li><a href="./cancelClass.php">Cancel class</a></li>
-            <li><a href="./makeupClass.php">Make up class</a></li>
+            <li><a href="./cancelClass.php">Cancellation</a></li>
+            <li><a href="./makeupClass.php">Make Up</a></li>
             <li><a href="./generateDocument.php">Generate Contract</a></li>
+			 <li><a href=""><img src="./" class="img-circle" />Juju</a></li>
 
             <li>
-              <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="./authentication.php" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
+              <a style = "display:none!important"class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="./authentication.php" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
             </li>
           </ul>
           <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse2">
