@@ -89,6 +89,7 @@ Follow me on Twitter @maridlcrmn
             <li><a href="./addSubject.php">Add Subject</a></li>
             <li><a href="./cancelClass.php">Cancel class</a></li>
             <li><a href="./makeupClass.php">Make up class</a></li>
+            <li><a href="./generateDocument.php">Generate Contract</a></li>
 
             <li>
               <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="./authentication.php" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
