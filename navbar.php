@@ -86,7 +86,7 @@ Follow me on Twitter @maridlcrmn
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-2">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="./inputForm.php">Add Professors/Ta</a></li>
+            <li><a href="./inputForm.php">New Employee</a></li>
             <li><a href="./addSubject.php">Add Subject</a></li>
             <li><a href="./cancelClass.php">Cancellation</a></li>
             <li><a href="./makeupClass.php">Make Up</a></li>

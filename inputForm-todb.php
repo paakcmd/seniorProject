@@ -14,17 +14,16 @@
   $fax = $_POST['fax'];
   $email = $_POST['email'];
   $home_address = $_POST['home_address'];
-  $course_no = $_POST['course_no'];
-  $section = $_POST['section'];
-  $weeks = $_POST['weeks'];
-  $no_of_weeks = $_POST['no_of_weeks'];
+
+  // $weeks = $_POST['weeks'];
+  // $no_of_weeks = $_POST['no_of_weeks'];
   $renumeration_rate = $_POST['renumeration_rate'];
   $traveling_expense = $_POST['traveling_expense'];
 
 
   include("connect-database.php");
 
-  $sql = " INSERT INTO user_info (first_name, last_name, department, highest_degree, highest_degree_other, level, address, position, account_number, bank_branch, phone, mobile, fax, email, home_address, course_no, section, weeks, no_of_weeks, renumeration_rate, traveling_expense) VALUES ('$first_name', '$last_name', '$department', '$highest_degree', '$highest_degree_other', '$level', '$address', '$position', '$account_number', '$bank_branch', '$phone', '$mobile', '$fax', '$email', '$home_address', '$course_no', '$section', '$weeks' , '$no_of_weeks', '$renumeration_rate', '$traveling_expense') ";
+  $sql = " INSERT INTO user_info (first_name, last_name, department, highest_degree, highest_degree_other, level, address, position, account_number, bank_branch, phone, mobile, fax, email, home_address, renumeration_rate, traveling_expense) VALUES ('$first_name', '$last_name', '$department', '$highest_degree', '$highest_degree_other', '$level', '$address', '$position', '$account_number', '$bank_branch', '$phone', '$mobile', '$fax', '$email', '$home_address', '$renumeration_rate', '$traveling_expense') ";
 
   if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";

@@ -215,41 +215,11 @@
         </div>
 
 
-        <div class="form-group">
-          <label class="col-md-12 control-label">Course No.</label>
-            <div class="col-md-12 selectContainer">
-            <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-            <select name="course_no" class="form-control selectpicker" >
-              <option value=" " >Please select course</option>
+        
 
-              <option>ITS100</option>
+        
 
-
-            </select>
-          </div>
-        </div>
-        </div>
-
-        <div class="form-group">
-          <label class="col-md-12 control-label">Section</label>
-            <div class="col-md-12 selectContainer">
-            <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-            <select name="section" class="form-control selectpicker" >
-              <option value=" " >Please select section</option>
-
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-
-
-            </select>
-          </div>
-        </div>
-        </div>
-
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label class="col-md-12 control-label">Weeks</label>
             <div class="col-md-12 selectContainer">
             <div class="input-group">
@@ -264,9 +234,9 @@
             </select>
           </div>
         </div>
-        </div>
+        </div> -->
 
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label class="col-md-12 control-label">Number of weeks (if less than 17)</label>
             <div class="col-md-12 inputGroupContainer">
             <div class="input-group">
@@ -274,7 +244,7 @@
           <input name="no_of_weeks" class="form-control" type="text">
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="form-group">
           <label class="col-md-12 control-label">Renumeration Rate (Baht/Hr.)</label>
