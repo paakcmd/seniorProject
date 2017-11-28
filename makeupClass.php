@@ -33,7 +33,7 @@
         <fieldset>
 
         <!-- Form Name -->
-        <legend>Make up Class</legend>
+        <legend>Make Up/Cancellation</legend>
 
         <!-- Text input-->
         <div class="form-group">
@@ -74,6 +74,22 @@
             </div>
           </div>
         </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Type</label>
+          <div class="col-md-8 inputGroupContainer">
+          <div class="input-group">
+            <select class="form-control select-modifiedByMe" name="type">
+              <option value="">Type</option>
+              <option value="">Make Up</option>
+              <option value="">Cancellation</option>
+
+            </select>
+            </div>
+          </div>
+        </div>
+
+
         <div class="form-group">
           <label class="col-md-4 control-label">Date</label>
           <div class="col-md-8 inputGroupContainer">

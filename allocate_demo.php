@@ -18,6 +18,54 @@
     legend {
       margin-bottom: 30px;
     }
+
+       #myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    }
+
+     #myInput0 {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    }
+
+
+  #myTable {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+  }
+
+  #myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+  }
+
+  #myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd; 
+  }
+
+  #myTable tr.header, #myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+  }
+    
+  .centerCell { margin: 0px auto;
+          align-content: center}
   </style>
   <body>
     <?php include('navbar.php'); ?>
@@ -53,25 +101,7 @@
               </div>
         </div>
 
-       <div class="form-group">
-          <label class="col-md-12 control-label">Employee List</label>
-          <div class="col-md-12 inputGroupContainer">
-          <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-          <input  name="emp1" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp2" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp3" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp4" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp5" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp6" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp7" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp8" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp9" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp10" placeholder="Full name" class="form-control"  type="text">
-
-            </div>
-          </div>
-        </div>
+      
 
      
 
@@ -79,7 +109,40 @@
         <input class="btn btn-success" type="submit" name="" value="submit">
         </fieldset>
       </form>
+
+
     </div>
+
+     <div class="container">
+      <input type="text" id="myInput0" placeholder="Names">
+    <input type="text" id="myInput" onkeyup="search()" placeholder="Search for names..">
+
+  <table id="myTable">
+    <tr class="header">
+    <th style="width:60%;">Name</th>
+    <th style="width:40%;">Select</th>
+
+
+    </tr>
+    
+    <?php
+    $names = array("James Gordon", "Justin Bieber", "Selena Gomez", "Gigi Hadid","Taylor Swift","John Mayer","Harry Styles","John Lennon");
+    $i;
+    for( $i=0 ; $i< 8 ; $i++ ){ ?>
+    <tr>
+    <td><?php echo $names[$i] ?></td>
+    <td class="centerCell"> <a class="must" href="#"><span class="glyphicon glyphicon-arrow-up"></span></a></td>
+
+
+
+     
+    </tr>
+   
+    
+    <?php } ?>
+  </table>
+
+  </div>
 
 
 
@@ -156,5 +219,41 @@ $('#timepicker4').timepicker({
     dropdown: true,
     scrollbar: true
 });
+
+function search() {
+      // Declare variables 
+      var input, filter, table, tr, td, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+
+      // Loop through all table rows, and hide those who don't match the search query
+      for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+        } else {
+        tr[i].style.display = "none";
+        }
+      } 
+      }
+    }
+
+     $("a.must").click(
+      function(e) {
+        console.log("IN");
+           e.preventDefault();
+           $(this).attr("href"); //do something with this
+           console.log($(this)[0].parentElement.parentElement.firstElementChild.textContent);
+
+           
+
+
+      }
+ );
+
+
   </script>
 </html>

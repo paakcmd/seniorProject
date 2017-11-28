@@ -92,7 +92,7 @@
             </div>
           </div>
         </div>
-
+        <hr>
         <div class="form-group">
           <label class="col-md-12 control-label">Day 1 </label>
             <div class="col-md-12 selectContainer">
@@ -123,9 +123,10 @@
             </div>
           </div>
         </div>
+        <hr>
 
         <div class="form-group">
-          <label class="col-md-12 control-label">Day 1 </label>
+          <label class="col-md-12 control-label">Day 2 </label>
             <div class="col-md-12 selectContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
@@ -154,7 +155,7 @@
             </div>
           </div>
         </div>
-
+        <hr>
 
         <input class="btn btn-success" type="submit" name="" value="submit">
         </fieldset>
