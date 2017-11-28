@@ -93,9 +93,11 @@ Follow me on Twitter @maridlcrmn
             <li><a href="./generateDocument.php">Generate Contract</a></li>
 			 <li><a href=""><img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" class="img-circle img-profile" />Juju</a></li>
 
+<!--
             <li>
-              <a style="display:none!important"class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="./authentication.php" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
+              <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="./authentication.php" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
             </li>
+-->
           </ul>
           <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse2">
             <form class="navbar-form navbar-right form-inline" role="form">
