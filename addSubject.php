@@ -71,6 +71,15 @@
                 </div>
               </div>
         </div>
+        <div class="form-group">
+              <label class="col-md-12 control-label">Number of Weeks</label>
+                <div class="col-md-12 inputGroupContainer">
+                <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="weeks_no" placeholder="Number of weeks" class="form-control"  type="number">
+                </div>
+              </div>
+        </div>
 
         <div class="form-group">
           <label class="col-md-12 control-label">Start Date</label>

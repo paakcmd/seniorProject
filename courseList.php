@@ -58,48 +58,31 @@
     <?php include('navbar.php'); ?>
 
     <div class="container">
-		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for course..">
 
 	<table id="myTable">
 	  <tr class="header">
-		<th style="width:60%;">Name</th>
+
 		<th style="width:40%;">Course</th>
 
-		  <th style="width:40%;">Contract</th>
-		  <th style="width:40%;">Timetable</th>
-		  <th style="width:40%;"></th>
+		  <th style="width:40%;">Total Hours</th>
+		  <th style="width:40%;">Cancellation</th>
+		  <th style="width:40%;">Make Up</th>
+
 	  </tr>
 		
 	  <?php
-		$names = array("James Gordon", "Justin Bieber", "Selena Gomez", "Gigi Hadid","Taylor Swift","John Mayer","Harry Styles","John Lennon");
+
 		$i;
 		for( $i=0 ; $i< 8 ; $i++ ){ ?>
 	  <tr>
-		<td><?php echo $names[$i] ?></td>
-		<td>ITS100</td>
+	  	<td>ITS100</td>
+		<td>18</td>
+		<td>6</td>
+		<td>3</td>
 
 
-		 <td class="centerCell"> <a href="createPDF.php" ><span class="glyphicon glyphicon-download-alt"></span></a></td>
-		 <td>
-		 	<select name="department" class="form-control selectpicker" >
-              <option value=" " >Month</option>
-              <option>January</option>
-              <option>February</option>
-              <option >March</option>
-              <option >April</option>
-              <option >May</option>
-              <option >June</option>
-              <option >July</option>
-              <option >August</option>
-              <option >September</option>
-              <option> October</option>
-              <option> November</option>
-              <option> December</option>
-              
-            </select>
-
-		 </td>
-		 <td class="centerCell"> <a href="#" ><span class="glyphicon glyphicon-download-alt"></span></a></td>
+		 
 	  </tr>
 	 
 		
