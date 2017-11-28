@@ -91,8 +91,8 @@ Follow me on Twitter @maridlcrmn
             <li><a href="./allocate.php">Allocate Employees</a></li>
             <li><a href="./cancelClass.php">Cancellation</a></li>
             <li><a href="./makeupClass.php">Make Up</a></li>
-            <li><a href="./generateDocument.php">Course List</a></li>
-            <li><a href="./generateDocument.php">Employee List</a></li>
+            <li><a href="./courseList.php">Course List</a></li>
+            <li><a href="./employeeList.php">Employee List</a></li>
 			 <li><a href=""><img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" class="img-circle img-profile" />Juju</a></li>
 
 <!--

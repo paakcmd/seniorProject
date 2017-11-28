@@ -67,7 +67,7 @@
                 <div class="col-md-12 inputGroupContainer">
                 <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-              <input name="sections" placeholder="Sections" class="form-control"  type="number">
+              <input name="section" placeholder="Sections" class="form-control"  type="number">
                 </div>
               </div>
         </div>
