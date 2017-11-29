@@ -64,8 +64,10 @@
 	  <tr class="header">
 		<th style="width:60%;">Name</th>
 		<th style="width:40%;">Course</th>
+		
 
 		  <th style="width:40%;">Contract</th>
+		  <th style="width:40%;"></th>
 		  <th style="width:40%;">Timetable</th>
 		  <th style="width:40%;"></th>
 	  </tr>
@@ -78,7 +80,15 @@
 		<td><?php echo $names[$i] ?></td>
 		<td>ITS100</td>
 
+		<td>
+		 	<select name="course" class="form-control selectpicker" >
+              <option value=" " >ITS100</option>
+              <option>CSS442</option>
 
+              
+            </select>
+
+		 </td>
 		 <td class="centerCell"> <a href="createPDF.php" ><span class="glyphicon glyphicon-download-alt"></span></a></td>
 		 <td>
 		 	<select name="department" class="form-control selectpicker" >

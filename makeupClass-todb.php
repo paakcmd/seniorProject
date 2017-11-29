@@ -14,19 +14,31 @@
 
   $duration = date("H:i", $time_diff);
 
-
+  // if ($remark =='absent') {
+  //   $user_id = $_POST["user_id"];
+  // }
 
 
 
   include("connect-database.php");
 
-  $sql = " INSERT INTO teachlog (course_no, section, remark, date, time_from, time_to, duration) VALUES ('$course_no', $section, '$remark', '$start_date', '$time_from', '$time_to', '$duration') ";
-  echo $sql;
+  if ($remark =='absent') {
+    $user_id = $_POST["user_id"];
+  $sql2 = " INSERT INTO teachlog (course_no, section, type, date, time_from, time_to, duration, user_id) VALUES ('$course_no', $section, '$remark', '$start_date', '$time_from', '$time_to', '$duration', $user_id) ";
+  echo $sql2;
+  }else{
+    
+  $sql2 = " INSERT INTO teachlog (course_no, section, type, date, time_from, time_to, duration) VALUES ('$course_no', $section, '$remark', '$start_date', '$time_from', '$time_to', '$duration') ";
+  echo $sql2;
+  }
 
-  if (mysqli_query($conn, $sql)) {
+
+
+
+  if (mysqli_query($conn, $sql2)) {
     echo "New record created successfully";
   } else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+      echo "Error: " . $sql2 . "<br>" . mysqli_error($conn);
   }
 
   mysqli_close($conn);

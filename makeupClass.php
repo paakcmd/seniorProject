@@ -81,8 +81,20 @@
           <div class="input-group">
             <select class="form-control select-modifiedByMe" name="type">
               <option value="None">Type</option>
-              <option value="Make Up">Make Up</option>
-              <option value="Cancellation">Cancellation</option>
+              <option value="makeup">Make Up</option>
+              <option value="cancellation">Cancellation</option>
+              <option value="absent">Absent</option>
+
+            </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Name</label>
+          <div class="col-md-8 inputGroupContainer">
+          <div class="input-group">
+            <input type="text" name="user_id" placeholder="If type is absent." class="form-control select-modifiedByMe">
 
             </select>
             </div>
@@ -94,7 +106,7 @@
           <label class="col-md-4 control-label">Date</label>
           <div class="col-md-8 inputGroupContainer">
           <div class="input-group">
-            <input name="start_date" type="text" id="datepicker" class="form-control select-modifiedByMe">
+            <input name="start_date" type="text" id="datepicker" class="form-control select-modifiedByMe" placeholder="Date">
             </div>
           </div>
         </div>
