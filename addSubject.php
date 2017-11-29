@@ -108,14 +108,14 @@
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
             <select name="day1" class="form-control selectpicker" >
-              <option value=" " >Please select day</option>
-              <option>Monday</option>
-              <option>Tuesday</option>
-              <option >Wednesday</option>
-              <option >Thursday</option>
-              <option >Friday</option>
-              <option >Saturday</option>
-              <option >Sunday</option>
+              <option value="10" >Please select day</option>
+              <option value="1">Monday</option>
+              <option value="2">Tuesday</option>
+              <option value="3">Wednesday</option>
+              <option value="4">Thursday</option>
+              <option value="5">Friday</option>
+              <option value="6">Saturday</option>
+              <option value="0">Sunday</option>
 
             </select>
           </div>
