@@ -29,28 +29,28 @@
   <body>
     <?php include('navbar.php'); ?>
     <div class="container">
-      <form class="well form-horizontal" action = "addSubject-todb.php" method="post" >
+      <form class="well form-horizontal" action = "makeupClass-todb.php" method="post" >
         <fieldset>
 
         <!-- Form Name -->
-        <legend>Make up Class</legend>
+        <legend>Make Up/Cancellation</legend>
 
         <!-- Text input-->
         <div class="form-group">
           <label class="col-md-4 control-label">Subject</label>
           <div class="col-md-8 inputGroupContainer">
           <div class="input-group">
-            <select class="form-control select-modifiedByMe" name="">
-              <option value="">Subject</option>
-              <option value="">ITS100</option>
-              <option value="">ITS101</option>
-              <option value="">ITS102</option>
-              <option value="">ITS103</option>
-              <option value="">ITS104</option>
-              <option value="">ITS105</option>
-              <option value="">ITS106</option>
-              <option value="">ITS107</option>
-              <option value="">ITS108</option>
+            <select class="form-control select-modifiedByMe" name="course_no">
+              <option value="None">Subject</option>
+              <option value="ITS100">ITS100</option>
+              <option value="ITS100">ITS101</option>
+              <option value="ITS100">ITS102</option>
+              <option value="ITS100">ITS103</option>
+              <option value="ITS100">ITS104</option>
+              <option value="ITS100">ITS105</option>
+              <option value="ITS100">ITS106</option>
+              <option value="ITS100">ITS107</option>
+              <option value="ITS100">ITS108</option>
 
             </select>
             </div>
@@ -61,24 +61,40 @@
           <label class="col-md-4 control-label">Section</label>
           <div class="col-md-8 inputGroupContainer">
           <div class="input-group">
-            <select class="form-control select-modifiedByMe" name="">
-              <option value="">Section</option>
-              <option value="">Sec 1</option>
-              <option value="">Sec 2</option>
-              <option value="">Sec 3</option>
-              <option value="">Sec 4</option>
-              <option value="">Sec 5</option>
-              <option value="">Sec 6</option>
-              <option value="">Sec 7</option>
+            <select class="form-control select-modifiedByMe" name="section">
+              <option value="0">Section</option>
+              <option value="1">Sec 1</option>
+              <option value="2">Sec 2</option>
+              <option value="3">Sec 3</option>
+              <option value="4">Sec 4</option>
+              <option value="5">Sec 5</option>
+              <option value="6">Sec 6</option>
+              <option value="7">Sec 7</option>
             </select>
             </div>
           </div>
         </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Type</label>
+          <div class="col-md-8 inputGroupContainer">
+          <div class="input-group">
+            <select class="form-control select-modifiedByMe" name="type">
+              <option value="None">Type</option>
+              <option value="Make Up">Make Up</option>
+              <option value="Cancellation">Cancellation</option>
+
+            </select>
+            </div>
+          </div>
+        </div>
+
+
         <div class="form-group">
           <label class="col-md-4 control-label">Date</label>
           <div class="col-md-8 inputGroupContainer">
           <div class="input-group">
-            <input type="text" id="datepicker" class="form-control select-modifiedByMe">
+            <input name="start_date" type="text" id="datepicker" class="form-control select-modifiedByMe">
             </div>
           </div>
         </div>
@@ -86,9 +102,9 @@
           <label class="col-md-4 control-label">Time</label>
           <div class="col-md-8 inputGroupContainer">
           <div class="input-group">
-            <input type="text" id="timepicker1" class="form-control time-form" name="time1">
+            <input name="time_from" type="text" id="timepicker1" class="form-control time-form" >
             to
-            <input type="text" id="timepicker2" class="form-control time-form" name="time2">
+            <input name="time_to" type="text" id="timepicker2" class="form-control time-form" >
             </div>
           </div>
         </div>

@@ -87,17 +87,26 @@ Follow me on Twitter @maridlcrmn
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-2">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="./inputForm.php">Add Professors/Ta</a></li>
+            <li><a href="./inputForm.php">New Employee</a></li>
             <li><a href="./addSubject.php">Add Subject</a></li>
+<<<<<<< HEAD
             <li><a href="./cancelClass.php">Cancellation</a></li>
             <li><a href="./makeupClass.php">Make Up</a></li>
             <li><a href="./generateDocument.php">Generate Contract</a></li>
             <li><a href="./">Summary</a></li>
+=======
+            <li><a href="./allocate.php">Allocate Employees</a></li>
+            <li><a href="./makeupClass.php">Make Up/Cancellation</a></li>
+            <li><a href="./courseList.php">Course List</a></li>
+            <li><a href="./employeeList.php">Employee List</a></li>
+>>>>>>> 08feb0e7f869b6ffa571733d5ba26e1de01c70fe
 			 <li><a href=""><img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" class="img-circle img-profile" />Juju</a></li>
 
+<!--
             <li>
-              <a style="display:none!important"class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="./authentication.php" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
+              <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="./authentication.php" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
             </li>
+-->
           </ul>
           <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse2">
             <form class="navbar-form navbar-right form-inline" role="form">

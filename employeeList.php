@@ -64,8 +64,10 @@
 	  <tr class="header">
 		<th style="width:60%;">Name</th>
 		<th style="width:40%;">Course</th>
-		 <th style="width:40%;">Section</th>
-		  <th style="width:40%;">Download</th>
+
+		  <th style="width:40%;">Contract</th>
+		  <th style="width:40%;">Timetable</th>
+		  <th style="width:40%;"></th>
 	  </tr>
 		
 	  <?php
@@ -75,8 +77,29 @@
 	  <tr>
 		<td><?php echo $names[$i] ?></td>
 		<td>ITS100</td>
-		<td><?php echo $i+1 ?></td>
+
+
 		 <td class="centerCell"> <a href="createPDF.php" ><span class="glyphicon glyphicon-download-alt"></span></a></td>
+		 <td>
+		 	<select name="department" class="form-control selectpicker" >
+              <option value=" " >Month</option>
+              <option>January</option>
+              <option>February</option>
+              <option >March</option>
+              <option >April</option>
+              <option >May</option>
+              <option >June</option>
+              <option >July</option>
+              <option >August</option>
+              <option >September</option>
+              <option> October</option>
+              <option> November</option>
+              <option> December</option>
+              
+            </select>
+
+		 </td>
+		 <td class="centerCell"> <a href="#" ><span class="glyphicon glyphicon-download-alt"></span></a></td>
 	  </tr>
 	 
 		
