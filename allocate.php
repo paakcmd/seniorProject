@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
   </head>
   <style media="screen">
     .container {
@@ -58,24 +57,22 @@
           <div class="col-md-12 inputGroupContainer">
           <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-          <input  name="emp1" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp2" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp3" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp4" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp5" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp6" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp7" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp8" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp9" placeholder="Full name" class="form-control"  type="text">
-          <input  name="emp10" placeholder="Full name" class="form-control"  type="text">
+          <div class="ui-widget">
+            <input  onkeypress="Search()" id="asdf" placeholder="Full name" class="form-control profName"  type="text">
+            <input  onkeypress="Search()" name="emp2" placeholder="Full name" class="form-control profName"  type="text">
+            <input  onkeypress="Search()" name="emp3" placeholder="Full name" class="form-control profName"  type="text">
+            <input  onkeypress="Search()" name="emp4" placeholder="Full name" class="form-control profName"  type="text">
+            <input  onkeypress="Search()" name="emp5" placeholder="Full name" class="form-control profName"  type="text">
+            <input  onkeypress="Search()"name="emp6" placeholder="Full name" class="form-control profName"  type="text">
+            <input  onkeypress="Search()" name="emp7" placeholder="Full name" class="form-control profName"  type="text">
+            <input  onkeypress="Search()"name="emp8" placeholder="Full name" class="form-control profName"  type="text">
+            <input  onkeypress="Search()" name="emp9" placeholder="Full name" class="form-control profName"  type="text">
+            <input  onkeypress="Search()" name="emp10" placeholder="Full name" class="form-control profName"  type="text">
+          </div>
 
             </div>
           </div>
         </div>
-
-     
-
-
         <input class="btn btn-success" type="submit" name="" value="submit">
         </fieldset>
       </form>
@@ -84,77 +81,17 @@
 
 
   </body>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="index.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
   <script>
-  $(function() {
-    $("#datepicker").datepicker();
-  });
+    function Search(term){
+      $(".profName").autocomplete({
+          source: 'profLiveSearch.php'
+      });
+    }
+  </script>
 
-  $(function() {
-    $("#datepicker2").datepicker();
-  });
 
-
-  $(document).ready(function(){
-    $('input#timepicker1').timepicker({});
-  });
-  $(document).ready(function(){
-    $('input#timepicker2').timepicker({});
-  });
-
-   $(document).ready(function(){
-    $('input#timepicker3').timepicker({});
-  });
-  $(document).ready(function(){
-    $('input#timepicker4').timepicker({});
-  });
-
-  $('#timepicker1').timepicker({
-    timeFormat: 'h:mm p',
-    interval: 20,
-    minTime: '9.00am',
-    maxTime: '8:00pm',
-    defaultTime: '9.00',
-    startTime: '9.00',
-    dynamic: false,
-    dropdown: true,
-    scrollbar: true
-});
-$('#timepicker2').timepicker({
-    timeFormat: 'h:mm p',
-    interval: 20,
-    minTime: '9.00am',
-    maxTime: '8:00pm',
-    defaultTime: '9.00',
-    startTime: '9.00',
-    dynamic: false,
-    dropdown: true,
-    scrollbar: true
-});
-
-  $('#timepicker3').timepicker({
-    timeFormat: 'h:mm p',
-    interval: 20,
-    minTime: '9.00am',
-    maxTime: '8:00pm',
-    defaultTime: '9.00',
-    startTime: '9.00',
-    dynamic: false,
-    dropdown: true,
-    scrollbar: true
-});
-$('#timepicker4').timepicker({
-    timeFormat: 'h:mm p',
-    interval: 20,
-    minTime: '9.00am',
-    maxTime: '8:00pm',
-    defaultTime: '9.00',
-    startTime: '9.00',
-    dynamic: false,
-    dropdown: true,
-    scrollbar: true
-});
   </script>
 </html>
