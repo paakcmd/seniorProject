@@ -74,8 +74,9 @@ print_r($datesforday2);
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
 
-for ($i=0; $i < count($datesforday1) ; $i++) { 
-  $sqldate = " INSERT INTO teachlog (course_no, section, remark, duration, time_from, time_to, date) VALUES ('$course_no', $section, 'default', '$duration1', '$start_time1' , '$end_time1', '".$datesforday1[$i]."') ";
+if ($first_day != '0') {
+  for ($i=0; $i < count($datesforday1) ; $i++) { 
+  $sqldate = " INSERT INTO teachlog (course_no, section, type, duration, time_from, time_to, date) VALUES ('$course_no', $section, 'default', '$duration1', '$start_time1' , '$end_time1', '".$datesforday1[$i]."') ";
   if (mysqli_query($conn, $sqldate)) {
     echo "New record created successfully <br>";
   } else {
@@ -83,9 +84,9 @@ for ($i=0; $i < count($datesforday1) ; $i++) {
   }
 }
 echo "<br>";
-
-for ($i=0; $i < count($datesforday2) ; $i++) { 
-  $sqldate = " INSERT INTO teachlog (course_no, section, remark, duration, time_from, time_to, date) VALUES ('$course_no', $section, 'default', '$duration2', '$start_time2' , '$end_time2', '".$datesforday2[$i]."') ";
+}else if ($second_day != '0') {
+  for ($i=0; $i < count($datesforday2) ; $i++) { 
+  $sqldate = " INSERT INTO teachlog (course_no, section, type, duration, time_from, time_to, date) VALUES ('$course_no', $section, 'default', '$duration2', '$start_time2' , '$end_time2', '".$datesforday2[$i]."') ";
   if (mysqli_query($conn, $sqldate)) {
     echo "New record created successfully <br>";
   } else {
@@ -94,6 +95,10 @@ for ($i=0; $i < count($datesforday2) ; $i++) {
 }
 
 echo "<br>";
+}
+
+
+
 
 
   mysqli_close($conn);

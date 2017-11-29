@@ -64,10 +64,10 @@
 	  <tr class="header">
 
 		<th style="width:40%;">Course</th>
-
-		  <th style="width:40%;">Total Hours</th>
-		  <th style="width:40%;">Cancellation</th>
-		  <th style="width:40%;">Make Up</th>
+		<th style="width:40%;">Section</th>
+		<th style="width:40%;">Total Hours</th>
+		<th style="width:40%;">Cancellation</th>
+		<th style="width:40%;">Make Up</th>
 
 	  </tr>
 		
@@ -77,6 +77,7 @@
 		for( $i=0 ; $i< 8 ; $i++ ){ ?>
 	  <tr>
 	  	<td>ITS100</td>
+	  	<td><?php echo $i+1; ?> </td>
 		<td>18</td>
 		<td>6</td>
 		<td>3</td>

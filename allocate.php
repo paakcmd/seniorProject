@@ -21,7 +21,7 @@
   <body>
     <?php include('navbar.php'); ?>
     <div class="container">
-      <form class="well form-horizontal" action = "addSubject-todb.php" method="post" >
+      <form class="well form-horizontal" action = "allocate-todb.php" method="post" >
         <fieldset>
 
         <!-- Form Name -->
@@ -47,7 +47,7 @@
                 <div class="col-md-12 inputGroupContainer">
                 <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-              <input name="sections" placeholder="Sections" class="form-control"  type="number">
+              <input name="section" placeholder="Sections" class="form-control"  type="number">
                 </div>
               </div>
         </div>
@@ -63,9 +63,9 @@
             <input  onkeypress="Search()" name="emp3" placeholder="Full name" class="form-control profName"  type="text">
             <input  onkeypress="Search()" name="emp4" placeholder="Full name" class="form-control profName"  type="text">
             <input  onkeypress="Search()" name="emp5" placeholder="Full name" class="form-control profName"  type="text">
-            <input  onkeypress="Search()"name="emp6" placeholder="Full name" class="form-control profName"  type="text">
+            <input  onkeypress="Search()" name="emp6" placeholder="Full name" class="form-control profName"  type="text">
             <input  onkeypress="Search()" name="emp7" placeholder="Full name" class="form-control profName"  type="text">
-            <input  onkeypress="Search()"name="emp8" placeholder="Full name" class="form-control profName"  type="text">
+            <input  onkeypress="Search()" name="emp8" placeholder="Full name" class="form-control profName"  type="text">
             <input  onkeypress="Search()" name="emp9" placeholder="Full name" class="form-control profName"  type="text">
             <input  onkeypress="Search()" name="emp10" placeholder="Full name" class="form-control profName"  type="text">
           </div>
