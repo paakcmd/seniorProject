@@ -58,7 +58,7 @@
           <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
           <div class="ui-widget">
-            <input  onkeypress="Search()" id="asdf" placeholder="Full name" class="form-control profName"  type="text">
+            <input  onkeypress="Search()" name="emp1" placeholder="Full name" class="form-control profName"  type="text">
             <input  onkeypress="Search()" name="emp2" placeholder="Full name" class="form-control profName"  type="text">
             <input  onkeypress="Search()" name="emp3" placeholder="Full name" class="form-control profName"  type="text">
             <input  onkeypress="Search()" name="emp4" placeholder="Full name" class="form-control profName"  type="text">
