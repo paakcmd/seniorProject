@@ -8,9 +8,8 @@ crossorigin="anonymous"></script>
 Code snippet by maridlcrmn for Bootsnipp.com
 Follow me on Twitter @maridlcrmn
 */
-
-.img-profile { width:22px; height:22px; margin-right:10px;}
-.navbar-container { width:80%; margin-left: 10%;}
+.img-profile { width:22px; height:22px; margin-right:10px; }
+.navbar-container { width:70%; margin-left: 15%;}
 .navbar-brand { position: relative; z-index: 2; }
 
 .navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; transition: transform 0.3s; }
@@ -93,6 +92,7 @@ Follow me on Twitter @maridlcrmn
             <li><a href="./cancelClass.php">Cancellation</a></li>
             <li><a href="./makeupClass.php">Make Up</a></li>
             <li><a href="./generateDocument.php">Generate Contract</a></li>
+<<<<<<< HEAD
             <li><a href="./">Summary</a></li>
 =======
             <li><a href="./allocate.php">Allocate Employees</a></li>
@@ -100,6 +100,8 @@ Follow me on Twitter @maridlcrmn
             <li><a href="./courseList.php">Course List</a></li>
             <li><a href="./employeeList.php">Employee List</a></li>
 >>>>>>> 08feb0e7f869b6ffa571733d5ba26e1de01c70fe
+=======
+>>>>>>> parent of 751d8c1... navbar
 			 <li><a href=""><img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" class="img-circle img-profile" />Juju</a></li>
 
 <!--
